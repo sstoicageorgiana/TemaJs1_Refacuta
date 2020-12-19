@@ -1,15 +1,15 @@
 /** 1.O functie "equals" care primeste 2 parametrii si returneaza daca cei 2 parametrii sunt egali, strict */
 
-let returnedStatament = equals(2,5)
+let returnedStatament = equals(2,5);
 console.log("1. After comparation we have: ", returnedStatament);
 
 function equals(FistNumber, SecondNumber)
 {
     if (FistNumber === SecondNumber)
-        return true 
+        return true;
     else
     {
-        return false 
+        return false;
     }
 }
 
@@ -20,11 +20,11 @@ console.log("2. After comparation we have:", returnedStatamentForCompare);
 function compare(fistNumber, secondNumber)
 {
     if ( fistNumber < secondNumber)
-        return -1
+        return -1;
     else if (fistNumber > secondNumber)
-        return 1
+        return 1;
     else if (fistNumber === secondNumber)
-        return 0
+        return 0;
 }
 
 /** 3. O functie "max" care primeste 2 parametrii si returneaza maximul dintre cele 2*/
@@ -35,13 +35,13 @@ function max(firstNumber, secondNumber)
    let maxNrLocal
    if (firstNumber > secondNumber)
    {
-     maxNrLocal =  firstNumber
+     maxNrLocal =  firstNumber;
    }
    else 
    {
-     maxNrLocal =  secondNumber
+     maxNrLocal =  secondNumber;
    }
-   return maxNrLocal
+   return maxNrLocal;
 }
 
 /** 4. O functie "max" care primeste 2 parametrii si returneaza maximul dintre cele 2*/
@@ -52,13 +52,13 @@ function min(firstNumber, secondNumber)
    let minNrLocal
    if (firstNumber < secondNumber)
    {
-    minNrLocal =  firstNumber
+    minNrLocal =  firstNumber;
    }
    else 
    {
-    minNrLocal =  secondNumber
+    minNrLocal =  secondNumber;
    }
-   return minNrLocal
+   return minNrLocal;
 }
 
 /** 5. O functie "suma" care primeste 1 parametru, numar intreg si returneaza suma primelor N numere naturale pozitive (exemplu: daca N este 3, trebuie sa returneze 6) */
@@ -66,10 +66,10 @@ let param =3 ;
 let sum = suma(param);
 console.log("5. The sum of first N numbers is: ", sum);
 function suma(param)
-{   let s = 0
+{   let s = 0;
     for ( let i=1; i<=param; i++)
     {
-        s = s+i
+        s = s+i;
     }
     return s;
 }
@@ -176,7 +176,7 @@ function produsImpare(n)
 
 //** 10.	O functie "contains" care primeste 2 parametri(arr - array de nr intregi si x - numar) si verifica daca x exista in array (rezultatul este true/false)*/
 let arrayContainsSpecificNumber = [1,2,3,4,5];
-let numberSearched = 2
+let numberSearched = 2;
 let bool =  contains(arrayContainsSpecificNumber,numberSearched);
 
 switch(bool)
@@ -203,7 +203,7 @@ function contains(arrayToSearch, element)
 
 //**  11.	O functie "maxArray" care primeste un array si returneaza valoarea maxima  (ar trebui sa functioneze si pentru numere si pentru stringuri)*/
 var arrayOfNumbers = [1,2,3,4,5,10];
-let maxOfArray = arrayMax(arrayOfNumbers)
+let maxOfArray = arrayMax(arrayOfNumbers);
 
 console.log("11. The maximum value from the array is : ", maxOfArray);
 function arrayMax(arr) {
@@ -252,9 +252,9 @@ function arrayMax(arr)
   while (len--) 
   {
     if (arr[len] > max)
-     {
+    {
       max = arr[len];
-      }
+    }
   }
   return max;
 };
@@ -268,8 +268,9 @@ arrayExpected = hasDuplicates(arrayHasDuplicates);
 
 console.log("13. Value expected", arrayExpected);
 
-function hasDuplicates(array) {
-    let value = []
+function hasDuplicates(array) 
+{
+    let value = [];
   
     for (let i = 0; i < array.length; i++)
     {
@@ -279,7 +280,7 @@ function hasDuplicates(array) {
             var arr = [true];                                                                                                                                                                                                                                                                                                         
             return arr[0];
         }
-        value.push(val)
+        value.push(val);
     }
     var arr = [false];
     return arr[0];
@@ -304,7 +305,7 @@ function produsPozitive(array)
             prod *= array[i];
         } 
     }
-    return prod
+    return prod;
 }
 
 
